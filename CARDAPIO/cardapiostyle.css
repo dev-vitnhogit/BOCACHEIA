@@ -67,7 +67,7 @@ header > #logo > img{
     font-size: 30px;
 }
 
-#contender-lanche{
+#conteneir-lanche{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -85,7 +85,8 @@ header > #logo > img{
 }
 
 .caixa > img{
-    width: 100px;
+    max-width: 100%;
+    max-height: 100px;
     display: block;
     margin: 0px auto;
 }
@@ -108,7 +109,7 @@ header > #logo > img{
     margin: 20px 0px 3px 0px;
 }
 
-#contender-porcoes{
+#conteneir-porcoes{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -127,11 +128,6 @@ header > #logo > img{
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-#conteneir-bebidas img{
-    width:80px;
-    height: 90px;
 }
 
 #categoria-comida > h2{
