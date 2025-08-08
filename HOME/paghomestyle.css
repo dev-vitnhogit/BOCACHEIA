@@ -1,0 +1,130 @@
+/*configuraçao padrao*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --laranja: #FF6600;
+    --branco:#FFFFFF;
+    --cinzaclaro:#F5F5F5;
+    --cinzaescuro: #333333;
+    --preto: #000000;
+    --laranjabocacheia:#db5d08;
+}
+
+body{
+    background-color: #333333;
+}
+
+/* estilo do cabeçalho*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color:var(--laranjabocacheia);
+    color: #FFFFFF;
+}
+
+header > #logo > img{
+    max-width: 60px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+}
+
+header #menu-hamburguer{
+    font-size: 30px;
+    display: none;
+}
+
+main{
+    height: 100vh;
+    background-image: url(/IMAGENS/fundo-boca.jfif);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+
+main > #frase-impactante > h1{
+    color: var(--branco);
+    text-align: center;
+    font-size: 30px;
+}
+
+#frase-impactante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+#area-btn > #btn-cardapio{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+}
+
+#btn-cardapio a{
+    text-decoration: none;
+    color: white;
+}
+
+#area-btn{
+   margin-top: 30px;
+}
+
+@media (max-width:600px) {
+    header #menu-hamburguer{
+        display: block;
+    }
+
+    nav{
+        display:none;
+        background-color:var(--cinzaescuro);
+        position: absolute;
+        top:74px;
+        right: 0px;
+        width: 150px;
+        box-shadow:1px 1px 16px black ;
+    }
+
+    nav.ativo{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    nav ul li a {
+        color: var(--laranjabocacheia);
+        text-transform:capitalize;
+
+    }
+
+    nav ul li{
+        border-bottom: 1px solid black;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --laranja: #FF6600;
+    --branco:#FFFFFF;
+    --cinzaclaro:#F5F5F5;
+    --cinzaescuro: #333333;
+    --preto: #000000;
+    --laranjabocacheia:#db5d08;
+}
+
+body{
+    background-color:var(--cinzaescuro) ;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color:var(--laranjabocacheia);
+    color: #FFFFFF;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+header > #logo > img{
+    max-width: 60px;
+}
+
+#menu-categorias{
+    position: sticky;
+    top: 60px;
+}
+
+#menu-categorias nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap:5px;
+    background-color: #F9A126;
+    padding: 5px;
+
+}
+
+#menu-categorias nav ul li{
+    background-color: #F9A126;
+    
+}
+
+#menu-categorias nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#categoria-lanche h2{
+    text-align: center;
+    background-color: #db5d08;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 30px;
+}
+
+#contender-lanche{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.caixa{
+    background-color:#333333;
+    padding:10px ;
+    width: 280px;
+    height: 200px;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 16px black;
+}
+
+.caixa > img{
+    width: 100px;
+    display: block;
+    margin: 0px auto;
+}
+
+.caixa button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.caixa .btn-pedir{
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+#categotia-porcoes > h2{
+    background-color: #db5d08;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0px 3px 0px;
+}
+
+#contender-porcoes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#categoria-bebidas h2{
+    background-color: #db5d08;
+    padding: 10px;
+    margin: 20px 0px 3px 0px;
+    text-align: center;
+}
+
+#conteneir-bebidas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#conteneir-bebidas img{
+    width:80px;
+    height: 90px;
+}
+
+#categoria-comida > h2{
+    padding: 10px;
+    margin: 20px 0px 3px 0px;
+    background-color: #db5d08;
+    text-align: center;
+}
+
+#conteneir-comida{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}

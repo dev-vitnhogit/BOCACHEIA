@@ -1,0 +1,70 @@
+BOCA CHEIA:
+
+CORES:
+
+Laranja principal: #FF6600 (um tom forte e vibrante)
+
+Branco: #FFFFFF (para dar espaço e clareza)
+
+Cinza claro: #F5F5F5 (para fundos suaves e equilibrar o visual)
+
+Cinza escuro: #333333 (para textos, fica bom para contraste)
+
+Preto: #000000 (para elementos que precisam de mais peso)
+
+
+FONTES:
+
+Fontes Sans-Serif (modernas e limpas)
+Poppins — super moderna, com formas arredondadas que combinam com o laranja energético
+
+Montserrat — bastante usada, elegante e versátil
+
+Roboto — simples e muito legível, ótima pra textos longos
+
+Open Sans — neutra e fácil de ler
+
+Fontes para títulos (mais impactantes)
+Oswald — ótima para títulos e chamadas, estilo condensado que chama atenção
+
+Raleway — elegante e leve, bom para destaque sem pesar demais
+
+Exemplo de combinação:
+Títulos: Poppins Bold ou Oswald Bold
+
+Texto normal: Open Sans Regular ou Roboto Regular
+
+
+📍 HEADER
+    - Logo “Boca Cheia”
+    - Menu: Home | Cardápio | Sobre | Contato
+
+📍 HERO (imagem ou banner de destaque)
+    - Frase de impacto: “Sabor que enche a boca e o coração!”
+    - Botão: Ver Cardápio
+
+📍 SOBRE
+    - Quem somos
+    - História do restaurante
+    - Missão e diferencial
+
+📍 CARDÁPIO
+    - Lanches 🍔
+    - Bebidas 🥤
+    - Sobremesas 🍰
+    - Cada item com nome, descrição, preço, e (se quiser) imagem
+
+📍 DESTAQUES OU PROMOÇÕES
+    - “Combo do dia” ou “Desconto da semana”
+
+📍 AVALIAÇÕES (opcional)
+    - Feedback de clientes
+
+📍 CONTATO
+    - Endereço
+    - WhatsApp com botão de contato
+    - Instagram ou outras redes
+
+📍 FOOTER
+    - Direitos reservados, link de redes sociais, CNPJ, etc.
+
