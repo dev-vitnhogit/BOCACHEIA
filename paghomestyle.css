@@ -55,7 +55,7 @@ header #menu-hamburguer{
 
 main{
     height: 100vh;
-    background-image: url(/IMAGENS/fundo-boca.jfif);
+    background-image: url(IMAGENS/fundo-boca.jfif);
     background-repeat: none;
     background-position: center;
     background-size: cover;
