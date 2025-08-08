@@ -102,7 +102,7 @@ header > #logo > img{
     margin: 10px;
 }
 
-#categotia-porcoes > h2{
+#categoria-porcoes > h2{
     background-color: #db5d08;
     padding: 10px;
     text-align: center;
@@ -142,4 +142,8 @@ header > #logo > img{
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+section h2{
+    scroll-margin-top: 90px;
 }
