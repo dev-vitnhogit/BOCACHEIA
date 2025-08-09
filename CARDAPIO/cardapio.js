@@ -4,7 +4,7 @@ const categorias = document.getElementById('menu-categorias')
 const btn_exit = document.getElementById('btn-exit')
 
 carrinho.addEventListener('click', ativarcarrinho);
-btn_exit.addEventListener('click', exitlateral)
+btn_exit.addEventListener('click', exitlateral);
 
 function ativarcarrinho(){
     cart_lateral.classList.add('aberto')
@@ -15,7 +15,7 @@ function exitlateral(){
     cart_lateral.classList.remove('aberto')
     categorias.style.display = 'block'
 
-}
+};
 
 
 
