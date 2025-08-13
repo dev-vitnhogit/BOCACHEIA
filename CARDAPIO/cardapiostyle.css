@@ -162,9 +162,9 @@ section h2{
     right: 0;
     width: 350px;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color:#333333;
     box-shadow: 1px 1px 16px black;
-    transition: right 0.3s ease;
+    transition: transform 0.3s ease;
     transform: translateX(100%);
 }
 
@@ -173,22 +173,34 @@ section h2{
     
 }
 
+#resultado-final{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color:var(--laranjabocacheia);
+}
+
 #exit-lateral > #btn-exit{
     border: none;
     font-size: 30px;
-    background-color: transparent;
-    padding: 5px;
-    border: 1px solid red;
+    background-color: var(--laranjabocacheia);
+    padding: 8px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
+#list-produtos .novo-estilo button{
+    display: none;
+}
+
 #list-produtos > .novo-estilo{
-    background-color: #FFFFFF;
-    color: black;
+    height: 200px;
 }
 
 #list-produtos > div {
-    margin: 10px 0px;
+    margin: 10px auto;
 }
 
 #list-produtos{

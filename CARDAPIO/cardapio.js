@@ -1,6 +1,6 @@
 
 // conteudo de conteneir lateral carrinho
-const carrinho = (document.getElementById('nav-carrinho'));
+const carrinho = document.getElementById('nav-carrinho');
 const cart_lateral = document.getElementById('cart-lateral');
 const categorias = document.getElementById('menu-categorias')
 const btn_exit = document.getElementById('btn-exit')
@@ -28,12 +28,11 @@ function exitlateral(){
 };
 
 // funçao para os botoes de adicionar no carrinho
-
 btn_adicionar.forEach(function(botoes){
     botoes.addEventListener('click', addprodutos)
 })
 
-
+// funçao que clona o produto e coloca no carrinho
 function addprodutos(event){
     const botao_clicado = event.target;
     const produto = botao_clicado.closest('.caixa')
