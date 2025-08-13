@@ -33,8 +33,16 @@ btn_adicionar.forEach(function(botoes){
     botoes.addEventListener('click', addprodutos)
 })
 
+
 function addprodutos(event){
     const botao_clicado = event.target;
+    const produto = botao_clicado.closest('.caixa')
+    
+    const produto_clonado = produto.cloneNode(true)
+
+    produto_clonado.classList.add('novo-estilo');
+
+    list_produtos.appendChild(produto_clonado)
 }
 
 

@@ -182,3 +182,16 @@ section h2{
     cursor: pointer;
 }
 
+#list-produtos > .novo-estilo{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#list-produtos > div {
+    margin: 10px 0px;
+}
+
+#list-produtos{
+    max-height: 80vh;
+    overflow-y: auto;
+}
