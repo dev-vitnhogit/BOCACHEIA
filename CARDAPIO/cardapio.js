@@ -42,9 +42,26 @@ function addprodutos(event){
     produto_clonado.classList.add('novo-estilo');
 
     list_produtos.appendChild(produto_clonado)
+
+    atualizartotal()
+};
+
+// funçao de soma o total de preço dos produtos adicionados no carrinho
+
+const valor_total = document.getElementById('valor-total');
+
+function atualizartotal(){
+    let total = 0;
+    const produtosdoCarrinho = list_produtos.querySelectorAll('.caixa')
+
+    produtosdoCarrinho.forEach(function(produto){
+        const preco = parseFloat(produto.querySelector('.preco').dataset.preco)
+        
+        total = total + preco;
+    })
+
+    valor_total.innerHTML = `Total: R$ ${total.toFixed(2)}`
 }
-
-
 
 
 
