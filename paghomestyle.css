@@ -56,7 +56,7 @@ header #menu-hamburguer{
 main{
     height: 100vh;
     background-image: url(IMAGENS/fundo-boca.jfif);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -78,15 +78,20 @@ main > #frase-impactante > h1{
 #area-btn > #btn-cardapio{
     border: none;
     outline: none;
-    padding: 10px 20px;
+    padding: 15px 40px;
     border-radius: 20px;
     color: white;
     background-color: red;
 }
 
+#area-btn > #btn-cardapio:hover{
+    background: rgba(255, 0, 0, 0.671);
+}
+
 #btn-cardapio a{
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
 
 #area-btn{
@@ -110,6 +115,7 @@ main > #frase-impactante > h1{
 
     nav.ativo{
         display: block;
+        max-height: 300px;
     }
 
     nav ul{

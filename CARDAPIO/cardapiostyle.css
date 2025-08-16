@@ -94,15 +94,12 @@ header > #logo > a > img{
     margin: 0px auto;
 }
 
-.caixa button{
+.caixa .btn-carrinho{
+    display: flex;
+    margin: 20px auto;
     border: none;
     padding: 10px;
     border-radius: 5px;
-}
-
-.caixa .btn-pedir{
-    padding: 10px 30px;
-    margin: 10px;
 }
 
 #categoria-porcoes > h2{
@@ -170,7 +167,6 @@ section h2{
 
 #cart-lateral.aberto{
     transform: translateX(0);
-    
 }
 
 #resultado-final{
@@ -180,15 +176,23 @@ section h2{
     padding: 20px;
     border-radius: 5px;
     background-color:var(--laranjabocacheia);
+    display: flex;
+    justify-content: space-between;
 }
 
 #resultado-final > p{
     background-color: white;
-    width: 40%;
+    width: 50%;
     color: black;
     padding: 10px;
     border-radius: 10px;
     text-transform: capitalize;
+}
+
+#btn-pagar{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
 }
 
 #exit-lateral > #btn-exit{

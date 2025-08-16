@@ -55,12 +55,17 @@ function atualizartotal(){
     const produtosdoCarrinho = list_produtos.querySelectorAll('.caixa')
 
     produtosdoCarrinho.forEach(function(produto){
-        const preco = parseFloat(produto.querySelector('.preco').dataset.preco)
-        
-        total = total + preco;
-    })
 
-    valor_total.innerHTML = `Total: R$ ${total.toFixed(2)}`
+    const preco = produto.querySelector('.preco').dataset.preco
+
+    const numero = parseFloat(preco.replace(",","."));
+        
+        total = total + numero;
+    });
+
+    const totalformatado = total.toFixed(2).replace(".",",");
+
+    valor_total.innerHTML = `Total: R$ ${totalformatado}`
 }
 
 
