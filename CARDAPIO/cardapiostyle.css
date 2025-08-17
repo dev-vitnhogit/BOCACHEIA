@@ -219,4 +219,47 @@ section h2{
 #list-produtos{
     max-height: 80vh;
     overflow-y: auto;
+    position: relative;
+}
+
+#area-pagar{
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 280px;
+    height: 200px;
+    z-index: 100;
+    
+}
+
+#pagar-pedido{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cinzaclaro);
+    color: black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 16px black;
+}
+
+#exit-confirmar{
+    background-color: var(--laranjabocacheia);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#pagar-pedido > #btn-confirmar{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    padding: 10px 20px;
+    background-color: #db5d08;
+    border-radius:5px;
+    
 }

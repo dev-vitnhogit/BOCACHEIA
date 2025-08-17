@@ -50,6 +50,8 @@ function addprodutos(event){
 
 const valor_total = document.getElementById('valor-total');
 
+let totalformatado = 0
+
 function atualizartotal(){
     let total = 0;
     const produtosdoCarrinho = list_produtos.querySelectorAll('.caixa')
@@ -61,12 +63,35 @@ function atualizartotal(){
     const numero = parseFloat(preco.replace(",","."));
         
         total = total + numero;
-    });
+    })
 
-    const totalformatado = total.toFixed(2).replace(".",",");
+    totalformatado = total.toFixed(2).replace(".",",");
 
     valor_total.innerHTML = `Total: R$ ${totalformatado}`
-}
+};
+
+    const pagar_pedido = document.querySelector('#pagar-pedido')
+    const btn_Pedido = document.querySelector('#btn-fazer-pedido')
+    const btn_confirmar = document.querySelector('#btn-confirmar')
+    const btn_exitConfirmar = document.querySelector('#exit-confirmar')
+
+       
+    btn_Pedido.addEventListener('click', pagarPedido)
+    btn_exitConfirmar.addEventListener('click', exitconfirmar)
+    btn_confirmar.addEventListener('click', botao_confirmar)
+
+    function pagarPedido(){
+       pagar_pedido.style.display = 'block'
+       const elemento_total = document.createElement('p')
+       elemento_total.innerText = `Total: R$ ${totalformatado}`
+       pagar_pedido.appendChild(elemento_total)
+    }
+
+    function exitconfirmar(){
+        pagar_pedido.style.display = 'none'
+    }
+
+
 
 
 
