@@ -79,12 +79,18 @@ function atualizartotal(){
     btn_Pedido.addEventListener('click', pagarPedido)
     btn_exitConfirmar.addEventListener('click', exitconfirmar)
     btn_confirmar.addEventListener('click', botao_confirmar)
-
+    
+    
     function pagarPedido(){
-       pagar_pedido.style.display = 'block'
-       const elemento_total = document.createElement('p')
-       elemento_total.innerText = `Total: R$ ${totalformatado}`
-       pagar_pedido.appendChild(elemento_total)
+       if(totalformatado == ''){
+         alert('nenhum pedido encontrado')
+       }
+       else{
+        pagar_pedido.style.display = 'block'
+       const elemento_total = document.querySelector('#elemento-total')
+       elemento_total.innerHTML = `Total: R$ ${totalformatado}`
+       }
+       
     }
 
     function exitconfirmar(){

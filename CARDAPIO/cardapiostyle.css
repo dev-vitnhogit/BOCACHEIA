@@ -263,3 +263,16 @@ section h2{
     border-radius:5px;
     
 }
+
+#elemento-total{
+    background-color: var(--laranjabocacheia);
+    width: 140px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
