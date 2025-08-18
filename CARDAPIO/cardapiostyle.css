@@ -102,6 +102,10 @@ header > #logo > a > img{
     border-radius: 5px;
 }
 
+.caixa .btn-carrinho:hover{
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
 #categoria-porcoes > h2{
     background-color: #db5d08;
     padding: 10px;
@@ -276,3 +280,31 @@ section h2{
     transform: translate(-50%,-50%);
 }
 
+.msg-erro{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    padding: 5px 5px;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border-bottom: 2px solid black;
+    color:white;
+}
+
+.msg-confirm{
+      position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    padding: 5px 5px;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border-bottom: 2px solid black;
+    color:white;
+    box-shadow: 1px 1px 16px black;
+}

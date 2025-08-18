@@ -74,6 +74,7 @@ function atualizartotal(){
     const btn_Pedido = document.querySelector('#btn-fazer-pedido')
     const btn_confirmar = document.querySelector('#btn-confirmar')
     const btn_exitConfirmar = document.querySelector('#exit-confirmar')
+    
 
        
     btn_Pedido.addEventListener('click', pagarPedido)
@@ -83,7 +84,16 @@ function atualizartotal(){
     
     function pagarPedido(){
        if(totalformatado == ''){
-         alert('nenhum pedido encontrado')
+
+          const msg_erro = document.createElement('div')
+          msg_erro.classList.add('msg-erro')
+          msg_erro.innerHTML = `Nenhum produto encontrado`
+
+          cart_lateral.appendChild(msg_erro)
+
+          setTimeout(function(){
+            msg_erro.style.display = 'none'
+          },2000);
        }
        else{
         pagar_pedido.style.display = 'block'
@@ -91,11 +101,26 @@ function atualizartotal(){
        elemento_total.innerHTML = `Total: R$ ${totalformatado}`
        }
        
-    }
+    };
+
+    function botao_confirmar(){
+        const msg_confirm = document.createElement('div')
+        msg_confirm.classList.add('msg-confirm')
+        msg_confirm.innerHTML = `Confirmado seu pedido`
+
+        cart_lateral.appendChild(msg_confirm)
+
+        setTimeout(function(){
+            msg_confirm.style.display = 'none'
+            exitconfirmar()
+            cart_lateral.classList.remove('aberto')
+        },3000)
+        
+    };
 
     function exitconfirmar(){
         pagar_pedido.style.display = 'none'
-    }
+    };
 
 
 
