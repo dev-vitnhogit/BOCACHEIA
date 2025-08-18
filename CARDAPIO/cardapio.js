@@ -38,9 +38,21 @@ function addprodutos(event){
     const produto = botao_clicado.closest('.caixa')
     
     const produto_clonado = produto.cloneNode(true)
+    produto_clonado.classList.add('novo-estilo')
 
-    produto_clonado.classList.add('novo-estilo');
+    const btn_carrinho_clone = produto_clonado.querySelector('.btn-carrinho')
+    btn_carrinho_clone.remove();
+    
+    const exit_caixa = document.createElement('button')
+    exit_caixa.innerHTML = `❌`
+    exit_caixa.classList.add('exit-caixa')
 
+    exit_caixa.addEventListener('click', function(){
+        produto_clonado.remove()
+        atualizartotal()
+    });
+
+    produto_clonado.appendChild(exit_caixa)
     list_produtos.appendChild(produto_clonado)
 
     atualizartotal()
@@ -70,6 +82,7 @@ function atualizartotal(){
     valor_total.innerHTML = `Total: R$ ${totalformatado}`
 };
 
+
     const pagar_pedido = document.querySelector('#pagar-pedido')
     const btn_Pedido = document.querySelector('#btn-fazer-pedido')
     const btn_confirmar = document.querySelector('#btn-confirmar')
@@ -81,7 +94,7 @@ function atualizartotal(){
     btn_exitConfirmar.addEventListener('click', exitconfirmar)
     btn_confirmar.addEventListener('click', botao_confirmar)
     
-    
+  // função   que mostra mesagem de erro se tiver 0 o total
     function pagarPedido(){
        if(totalformatado == ''){
 
@@ -103,6 +116,7 @@ function atualizartotal(){
        
     };
 
+    // função que do botao de confirmar que quando clicar aparece a mensagem de confirmado o pedido
     function botao_confirmar(){
         const msg_confirm = document.createElement('div')
         msg_confirm.classList.add('msg-confirm')
@@ -114,10 +128,11 @@ function atualizartotal(){
             msg_confirm.style.display = 'none'
             exitconfirmar()
             exitlateral()
-        },3000)
-        
+        },2000)
+
     };
 
+    // botao (x) de sair do conteiner pagar pedido
     function exitconfirmar(){
         pagar_pedido.style.display = 'none'
     };
