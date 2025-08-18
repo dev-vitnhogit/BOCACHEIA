@@ -113,7 +113,7 @@ function atualizartotal(){
         setTimeout(function(){
             msg_confirm.style.display = 'none'
             exitconfirmar()
-            cart_lateral.classList.remove('aberto')
+            exitlateral()
         },3000)
         
     };
